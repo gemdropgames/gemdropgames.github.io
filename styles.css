@@ -165,11 +165,6 @@ a img{
   padding-top: 24px;
 }
 
-.gemdrop-create-character {
-  font-size: 21px;
-  padding-top: 400px;
-}
-
 .gemdrop-game-video {
   max-height: 600px;
 }
@@ -178,10 +173,24 @@ a img{
   padding-top: 48px;
 }
 
-.gemdrop-create-character a {
-  text-decoration: none;
-  color: #767777;
-  font-weight: 300;
+
+.about-us {
+  text-align: center;
+  width: 100%;
+  background-color: #1b1e23;
+  padding: 32px;
+}
+
+.clay-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('images/clay_pfp.jpg') center / cover;
+}
+
+.clay-card-image__filename {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .gemdrop-main-section {
@@ -196,6 +205,7 @@ a img{
   white-space: nowrap;
   overflow-x: auto;
   background-color: black;
+  padding-bottom: 48px;
 }
 
 .gemdrop-screen {
@@ -271,11 +281,11 @@ a img{
   overflow: hidden;
 }
 
-  .gemdrop-auto .gemdrop-screen-image {
-    display: block;
-    height: 300px;
-    z-index: 1;
-  }
+.gemdrop-auto .gemdrop-screen-image {
+  display: block;
+  height: 300px;
+  z-index: 1;
+}
 
 
 .gemdrop-wear-section {
@@ -310,15 +320,15 @@ a img{
   color: #8bc34a !important;
 }
 
-  .gemdrop-link:hover {
-    color: #7cb342 !important;
-  }
+.gemdrop-link:hover {
+  color: #7cb342 !important;
+}
 
-  .gemdrop-link .material-icons {
-    position: relative;
-    top: -1px;
-    vertical-align: middle;
-  }
+.gemdrop-link .material-icons {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
 
 .gemdrop-alt-link {
   text-decoration: none;
@@ -333,6 +343,10 @@ a img{
 .gemdrop-alt-link .material-icons {
   position: relative;
   top: 6px;
+}
+
+.gemdrop-content-title {
+  color: #f3f3f3
 }
 
 .gemdrop-game-title {
