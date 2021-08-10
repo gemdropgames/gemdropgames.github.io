@@ -46,15 +46,16 @@
       <div class="gemdrop-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="gemdrop-title mdl-layout-title">
-            <img class="gemdrop-logo-image" src="images/gemdrop_logo_green.png">
+            <a href="#top"><img class="gemdrop-logo-image" src="images/gemdrop_logo_green.png"></a>
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="gemdrop-header-spacer mdl-layout-spacer"></div>
           <!-- Navigation -->
           <div class="gemdrop-navigation-container">
             <nav class="gemdrop-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Games</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About Us</a>
+              <a class="gemdrop-navigation-tag mdl-navigation__link mdl-typography--text-uppercase" href="#games">Games</a>
+              <a class="gemdrop-navigation-tag mdl-navigation__link mdl-typography--text-uppercase" href="">About Us</a>
+              <a class="gemdrop-navigation-tag mdl-navigation__link mdl-typography--text-uppercase" href="mailto: contact@gemdropgames.com">Contact Us</a>
             </nav>
           </div>
           <span class="gemdrop-mobile-title mdl-layout-title">
@@ -64,166 +65,67 @@
       </div>
 
 
-      <div class="mdl-layout__content">
+      <div class="mdl-layout__content gemdrop-content">
         <a name="top"></a>
         <div class="main-section mdl-typography--text-center">
-          <div class="logo-font gemdrop-slogan">be together. not the same.</div>
-
-          <a href="#games">
+          <a href="#hho-entry">
             <button class="gemdrop-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
               <i class="material-icons">expand_more</i>
             </button>
           </a>
         </div>
-        <div class="gemdrop-screen-section mdl-typography--text-center">
+        <div class="gemdrop-main-section mdl-typography--text-center">
           <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
-          <div class="gemdrop-screens">
-            <div class="gemdrop-wear gemdrop-screen">
-              <a class="gemdrop-image-link" href="">
-                <img class="gemdrop-screen-image" src="images/wear-silver-on.png">
-                <img class="gemdrop-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="gemdrop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
-            </div>
-            <div class="gemdrop-phone gemdrop-screen">
-              <a class="gemdrop-image-link" href="">
-                <img class="gemdrop-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="gemdrop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
-            </div>
-            <div class="gemdrop-tablet gemdrop-screen">
-              <a class="gemdrop-image-link" href="">
-                <img class="gemdrop-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="gemdrop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
-            </div>
-            <div class="gemdrop-tv gemdrop-screen">
-              <a class="gemdrop-image-link" href="">
-                <img class="gemdrop-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="gemdrop-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="gemdrop-auto gemdrop-screen">
-              <a class="gemdrop-image-link" href="">
-                <img class="gemdrop-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="gemdrop-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
-            </div>
+          <div class="mdl-typography--display-1">
+            <a href="https://store.steampowered.com/app/1651500/Harvest_Hero_Origins/" target="_blank" class="no-text-decoration main-link">
+              Wishlist Harvest Hero Origins on Steam
+            </a>
           </div>
-        </div>
-        <div class="gemdrop-wear-section">
-          <div class="gemdrop-wear-band">
-            <div class="gemdrop-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase gemdrop-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="gemdrop-customized-section">
-          <div class="gemdrop-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="gemdrop-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="gemdrop-customized-section-image"></div>
-        </div>
-        <div class="gemdrop-more-section">
-          <div class="gemdrop-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-          <div class="gemdrop-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
+          <div id="games" class="gemdrop-games mdl-typography--text-center">
+            <div id="hho-entry" class="gemdrop-game-entry">
+              <div class="mdl-typography--display-1 gemdrop-game-title">
+                Harvest Hero Origins
               </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on Android</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="gemdrop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="gemdrop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   androidify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="gemdrop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Download now
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="gemdrop-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Find apps
-                   <i class="material-icons">chevron_right</i>
-                 </a>
+              <div class="gemdrop-game-entry-content">
+                <video id="hho-trailer" class="gemdrop-game-video" src="video/hho_trailer_wishlist.mp4#t=0.5" controls preload="auto">
+                  <p>Your browser doesn't support HTML5 video. Here is a <a href="video/hho_trailer_wishlist.mp4">link to the video</a> instead.</p>
+                </video>
+                <p class="gemdrop-game-entry--text">
+                  An arcade wave defense game with local co-op, unlockable playable characters and skins.
+                  <br>
+                  <br>
+                  A young hero picks up a hammer to defend his home from the onslaught of the Grooble army. Defend the village of Fronvale and become the Harvest Hero!
+                </p>
               </div>
             </div>
           </div>
         </div>
-
         <footer class="gemdrop-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
+              <button class="gemdrop-social-button mdl-mega-footer--social-btn">
+                <a href="https://twitter.com/GemdropGames" target="_blank">
+                  <span class="iconify gemdrop-social-link" data-icon="mdi:twitter"></span>
+                </a>
+              </button>
               &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+              <button class="gemdrop-social-button mdl-mega-footer--social-btn">
+                <a href="https://discord.gg/c7XQVq6RMd" target="_blank">
+                  <span class="iconify gemdrop-social-link" data-icon="akar-icons:discord-fill"></span>
+                </a>
+              </button>
               &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+              <button class="gemdrop-social-button mdl-mega-footer--social-btn">
+                <a href="https://store.steampowered.com/search/?developer=Gemdrop%20Games" target="_blank">
+                  <span class="iconify gemdrop-social-link" data-icon="bx:bxl-steam"></span>
+                </a>
+              </button>
+              &nbsp;
+              <button class="gemdrop-social-button mdl-mega-footer--social-btn">
+                <a href="https://www.youtube.com/channel/UCQlBNfVVbjLkr2OHdYCSKCw" target="_blank">
+                  <span class="iconify gemdrop-social-link" data-icon="akar-icons:youtube-fill"></span>
+                </a>
+              </button>
             </div>
             <div class="mdl-mega-footer--right-section">
               <a class="mdl-typography--font-light" href="#top">
@@ -234,39 +136,12 @@
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+            <p class="mdl-typography--font-light">© 2021 Gemdrop Games</p>
           </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="gemdrop-link gemdrop-link-menu mdl-typography--font-light" id="version-dropdown">
-              Versions
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
-            </ul>
-            <a class="gemdrop-link gemdrop-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">App developer resources</li>
-              <li class="mdl-menu__item">Android Open Source Project</li>
-              <li class="mdl-menu__item">Android SDK</li>
-              <li class="mdl-menu__item">Android for Work</li>
-            </ul>
-            <a class="gemdrop-link mdl-typography--font-light" href="">Blog</a>
-            <a class="gemdrop-link mdl-typography--font-light" href="">Privacy Policy</a>
-          </div>
-
         </footer>
       </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/gemdrop-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>

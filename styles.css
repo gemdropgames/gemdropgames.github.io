@@ -68,82 +68,82 @@ a img{
 
 .gemdrop-header {
   overflow: visible;
-  background-color: white;
+  background-color: black;
 }
 
-  .gemdrop-header .material-icons {
-    color: #767777 !important;
+.gemdrop-header .material-icons {
+  color: #767777 !important;
+}
+
+.gemdrop-header .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.gemdrop-header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.gemdrop-navigation-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gemdrop-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 800px;
+}
+
+.gemdrop-search-box.is-focused + .gemdrop-navigation-container {
+  opacity: 0;
+  width: 100px;
+}
+
+
+.gemdrop-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+  .gemdrop-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid #8bc34a;
   }
 
-  .gemdrop-header .mdl-layout__drawer-button {
-    background: transparent;
-    color: #767777;
-  }
+.gemdrop-search-box {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
 
-  .gemdrop-header .mdl-navigation__link {
-    color: #757575;
-    font-weight: 700;
-    font-size: 14px;
-  }
-
-  .gemdrop-navigation-container {
-    /* Simple hack to make the overflow happen to the left instead... */
-    direction: rtl;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 500px;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .gemdrop-navigation {
-    /* ... and now make sure the content is actually LTR */
-    direction: ltr;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 800px;
-  }
-
-  .gemdrop-search-box.is-focused + .gemdrop-navigation-container {
-    opacity: 0;
-    width: 100px;
-  }
-
-
-  .gemdrop-navigation .mdl-navigation__link {
-    display: inline-block;
-    height: 60px;
-    line-height: 68px;
-    background-color: transparent !important;
-    border-bottom: 4px solid transparent;
-  }
-
-    .gemdrop-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
-    }
-
-  .gemdrop-search-box {
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  .gemdrop-more-button {
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
-  }
+.gemdrop-more-button {
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
 
 
 .main-section {
   position: relative;
   height: 800px;
   width: auto;
-  background-color: #f3f3f3;
+  background-color: black;
   background: url('images/main_banner.png') center 0% no-repeat;
   background-size: cover;
 }
@@ -170,23 +170,32 @@ a img{
   padding-top: 400px;
 }
 
-  .gemdrop-create-character a {
-    text-decoration: none;
-    color: #767777;
-    font-weight: 300;
-  }
-
-.gemdrop-screen-section {
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 80px;
+.gemdrop-game-video {
+  max-height: 600px;
 }
 
-.gemdrop-screens {
-  text-align: right;
+.gemdrop-game-entry {
+  padding-top: 48px;
+}
+
+.gemdrop-create-character a {
+  text-decoration: none;
+  color: #767777;
+  font-weight: 300;
+}
+
+.gemdrop-main-section {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 80px;
+  background-color: black;
+}
+
+.gemdrop-games {
   width: 100%;
   white-space: nowrap;
   overflow-x: auto;
+  background-color: black;
 }
 
 .gemdrop-screen {
@@ -317,14 +326,39 @@ a img{
   font-size: 16px;
 }
 
-  .gemdrop-alt-link:hover {
-    color: #00bfa5 !important;
-  }
+.gemdrop-alt-link:hover {
+  color: #00bfa5 !important;
+}
 
-  .gemdrop-alt-link .material-icons {
-    position: relative;
-    top: 6px;
-  }
+.gemdrop-alt-link .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+.gemdrop-game-title {
+  color: #f3f3f3;
+}
+
+.gemdrop-game-entry-content {
+  padding-top: 32px;
+}
+
+.gemdrop-game-entry--text {
+  padding-top: 32px;
+  color: #f3f3f3;
+}
+
+.main-link {
+  color: #00A879;
+}
+
+.main-link:hover {
+  color: white;
+}
+
+.gemdrop-content {
+  background-color: black;
+}
 
 .gemdrop-customized-section {
   text-align: center;
@@ -362,70 +396,94 @@ a img{
 .gemdrop-card-container {
 }
 
-  .gemdrop-card-container .mdl-card__media {
-    overflow: hidden;
-    background: transparent;
-  }
+.gemdrop-card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
 
-    .gemdrop-card-container .mdl-card__media img {
-      width: 100%;
-    }
+.gemdrop-card-container .mdl-card__media img {
+  width: 100%;
+}
 
-  .gemdrop-card-container .mdl-card__title {
-    background: transparent;
-    height: auto;
-  }
+.gemdrop-card-container .mdl-card__title {
+  background: transparent;
+  height: auto;
+}
 
-  .gemdrop-card-container .mdl-card__title-text {
-    color: black;
-    height: auto;
-  }
+.gemdrop-card-container .mdl-card__title-text {
+  color: black;
+  height: auto;
+}
 
-  .gemdrop-card-container .mdl-card__supporting-text {
-    height: auto;
-    color: black;
-    padding-bottom: 56px;
-  }
+.gemdrop-card-container .mdl-card__supporting-text {
+  height: auto;
+  color: black;
+  padding-bottom: 56px;
+}
 
-  .gemdrop-card-container .mdl-card__actions {
-    position: absolute;
-    bottom: 0;
-  }
+.gemdrop-card-container .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
 
-  .gemdrop-card-container .mdl-card__actions a {
-    border-top: none;
-    font-size: 16px;
-  }
+.gemdrop-card-container .mdl-card__actions a {
+  border-top: none;
+  font-size: 16px;
+}
 
 .gemdrop-footer {
-  background-color: #fafafa;
+  background-color: black;
   position: relative;
 }
 
-  .gemdrop-footer a:hover {
-    color: #8bc34a;
-  }
+.gemdrop-footer a:hover {
+  color: white;
+}
 
-  .gemdrop-footer .mdl-mega-footer--top-section::after {
-    border-bottom: none;
-  }
+.gemdrop-footer .mdl-mega-footer--top-section::after {
+  border-bottom: none;
+}
 
-  .gemdrop-footer .mdl-mega-footer--middle-section::after {
-    border-bottom: none;
-  }
+.no-text-decoration {
+  text-decoration: none;
+}
 
-  .gemdrop-footer .mdl-mega-footer--bottom-section {
-    position: relative;
-  }
+.gemdrop-footer .mdl-mega-footer--middle-section::after {
+  border-bottom: none;
+}
 
-  .gemdrop-footer .mdl-mega-footer--bottom-section a {
-    margin-right: 2em;
-  }
+.gemdrop-footer .mdl-mega-footer--bottom-section {
+  position: relative;
+}
 
-  .gemdrop-footer .mdl-mega-footer--right-section a .material-icons {
-    position: relative;
-    top: 6px;
-  }
+.gemdrop-footer .mdl-mega-footer--bottom-section a {
+  margin-right: 2em;
+}
+
+.gemdrop-footer .mdl-mega-footer--right-section a .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+.gemdrop-social-button {
+  background-color: black;
+}
+
+.gemdrop-navigation-tag {
+  color: #00A879;
+}
+
+.gemdrop-navigation-tag:hover {
+  color: white;
+}
+
+.gemdrop-social-link {
+  color: #00A879;
+}
+
+.gemdrop-social-link:hover {
+  color: white;
+}
 
 
 .gemdrop-link-menu:hover {
