@@ -177,20 +177,39 @@ a img{
 .about-us {
   text-align: center;
   width: 100%;
+  height: 100%;
   background-color: #1b1e23;
   padding: 32px;
 }
 
-.clay-card-image.mdl-card {
-  width: 256px;
-  height: 256px;
-  background: url('images/clay_pfp.jpg') center / cover;
+.about-us-title {
+  padding-bottom: 32px;
 }
 
-.clay-card-image__filename {
+.about-us-cards {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gemdrop-about-card {
+  background-color: black;
+}
+
+.gemdrop-about-card__title {
   color: black;
-  font-size: 18px;
   font-weight: 500;
+}
+
+.gemdrop-about-card__supporting-text {
+  color: #00A879;
+}
+
+.clay-card-image {
+  height: 256px;
+  background: url('images/clay_pfp.jpg') center / cover;
+  color: white
 }
 
 .gemdrop-main-section {
@@ -202,6 +221,7 @@ a img{
 
 .gemdrop-games {
   width: 100%;
+  height: 100%;
   white-space: nowrap;
   overflow-x: auto;
   background-color: black;
